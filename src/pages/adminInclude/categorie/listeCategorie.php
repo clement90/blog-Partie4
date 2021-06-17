@@ -2,6 +2,7 @@
 <div class="gestionCategorie">
 
     <?php
+        require "../../src/fonctions/categorieDBfonctions.php";
         require "../../src/pages/adminInclude/categorie/hardCategorie.php";
         require "../../src/pages/adminInclude/categorie/articleCategorie.php";
         require "../../src/pages/adminInclude/categorie/gameCategorie.php";

@@ -19,6 +19,7 @@ $choixMenu = "adminContenu";
     <div class="template p-2">
         <div class="menu mt-5">
             <a href="../../src/pages/admin.php?choix=listeCategorie">Gérer les catégories</a>
+            <a href="../../src/pages/admin.php?choix=listeJeu">Gérer les jeux</a>
             <a href="../../src/pages/admin.php?choix=listeUser">Gérer les users</a>
             <a href="../../src/pages/admin.php?choix=listeCommentaire">Gérer les commentaires</a>
             <a href="../../src/pages/admin.php?choix=listeArticle">Gérer les articles</a>
@@ -28,7 +29,11 @@ $choixMenu = "adminContenu";
                 //Quand l'admin sélectionne les catégorie
                 if(isset($_GET["choix"]) && $_GET["choix"] == "listeCategorie"){
                 require "../../src/pages/adminInclude/categorie/listeCategorie.php";
-            }
+                }
+                //Quand l'admin sélectionne liste jeux
+                if(isset($_GET["choix"]) && $_GET["choix"] == "listeJeu"){
+                    require "../../src/pages/adminInclude/listeJeu/listeJeu.php";
+                }
             ?>
         </div>
     </div>

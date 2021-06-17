@@ -25,8 +25,9 @@
         && !empty($_POST["mdp"]) && !empty($_POST["mdp2"])){
 
             //si l'avatar du user est vide, j'utiliserai l'avatar par défaut
+            
             $photo= "../../src/img/site/defaut_avatar.png";
-
+            
             // Sanétiser mes données
             //Je construit un tableau avec les données recues
             $option = array(
@@ -40,7 +41,7 @@
 
             //Créer un variable result qui va accueillir les données saines
             $result = filter_input_array(INPUT_POST, $option);
-
+            
             $nom = $result["nom"];
             $prenom = $result["prenom"];
             $login = $result["login"];
@@ -120,9 +121,9 @@
 
 
 <?php
-        }
-        else
-        {
+    }
+    else
+    {
 
 ?>
 
