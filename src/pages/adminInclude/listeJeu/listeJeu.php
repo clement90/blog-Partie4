@@ -18,7 +18,7 @@
             );
 
             $result = filter_input_array(INPUT_POST, $option);
-            //Vérifier la date
+            
             //Remplire les variable
             $nom = $_POST["nom"];
             $developpeur = $_POST["developpeur"];
@@ -27,7 +27,9 @@
             $cover = $_POST["cover"];
             $console = $_POST["console"];
             $genre = $_POST["genre"];
+
             //Vérifier que le jeu n'existe pas déjà dans la base de données
+
             $verifGame = verifGame($nom, $console);
             if(isset($verifGame) && $verifGame == TRUE){
             //Faire appel a la fonction addGame()

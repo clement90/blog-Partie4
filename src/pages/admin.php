@@ -2,8 +2,8 @@
 $titre = "Espace d'administration";
 require "../../src/common/template.php";
 require "../../src/fonctions/dbAccess.php";
-require "../../src/fonctions/dbFonction.php";
-require "../../src/fonctions/mesFonctions.php";
+/* require "../../src/fonctions/dbFonction.php";
+require "../../src/fonctions/mesFonctions.php"; */
 
 // refuser l'accès à la page  aux personnes qui ne sont pas admin
 if($_SESSION["user"]["role"] != "admin"){
